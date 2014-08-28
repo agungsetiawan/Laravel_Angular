@@ -20,7 +20,7 @@ class CommentController extends \BaseController {
 	 */
 	public function create()
 	{
-		//
+		return "create";
 	}
 
 
@@ -75,7 +75,7 @@ class CommentController extends \BaseController {
 	 */
 	public function edit($id)
 	{
-		//
+		return 'Edit '.$id;
 	}
 
 
