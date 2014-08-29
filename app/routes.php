@@ -21,6 +21,12 @@ Route::get('/', function()
 	return View::make('index');
 });
 
-Route::group(array('prefix'=>'api'), function(){
+Route::group(array('prefix'=>'api','before'=>'oauth'), function(){
 	Route::resource('comments','CommentController');
+});
+
+
+Route::post('oauth/access_token', function()
+{
+    return AuthorizationServer::performAccessTokenFlow();
 });
