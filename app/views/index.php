@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html ng-app="scotchApp">
+<html ng-app="AgungApp">
 <head>
 	<title>Laravel - Angular</title>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
 	<script src="js/app.js"></script>
+	<script src="js/controller.js"></script>
+	<script src="js/commentService.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>

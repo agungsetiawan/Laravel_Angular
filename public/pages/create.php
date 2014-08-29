@@ -1,5 +1,4 @@
-<form ng-submit="update()">
-	<input type="hidden" ng-model="commentData.id">
+<form ng-submit="save()">
 	<div class="input">
 		<input type="text" name="author" ng-model="commentData.author">
 	</div>

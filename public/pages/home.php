@@ -1,5 +1,3 @@
-<p>{{ message }}</p>
-
 <table>
 	<thead>
 		<tr>
@@ -9,15 +7,10 @@
 		</tr>
 	</thead>
 	<tbody>
-		<tr>
-			<td>Agung Setiawan</td>
-			<td>Laravel is good hahahahah gooood as well as cool</td>
-			<td><a href="#/edit/1">Edit</a> | <a href="">Delete</a></td>
-		</tr>
-		<tr>
-			<td>Agung Setiawan</td>
-			<td>Laravel is good</td>
-			<td><a href="#/edit/2">Edit</a> | <a href="">Delete</a></td>
+		<tr ng-repeat="comment in comments">
+			<td>{{ comment.author }}</td>
+			<td>{{ comment.text }}</td>
+			<td><a ng-click="edit(comment.id)">Edit</a> | <a ng-click="delete(comment.id)">Delete</a></td>
 		</tr>
 	</tbody>
 </table>

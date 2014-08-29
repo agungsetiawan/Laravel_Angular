@@ -54,3 +54,7 @@ table,td,th{
 td{
 	padding: 5px;
 }
+
+.input{
+	margin-bottom: 10px;
+}
