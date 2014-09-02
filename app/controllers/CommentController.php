@@ -44,7 +44,7 @@ class CommentController extends \BaseController {
 			'text'=>Input::get('text')
 		));
 
-		return Response::json(array('success'=>true));
+		return Response::json(array('success'=>true),201);
 	}
 
 
@@ -125,7 +125,7 @@ class CommentController extends \BaseController {
 
 		Comment::destroy($id);
 
-		return Response::json(array('success'=>true));
+		return Response::json(array('success'=>true),204);
 	}
 
 
